@@ -1,5 +1,6 @@
 import inputd from "readline-sync";
 
+
 console.log("Você deverá escrever seu nome e caso ele contenha 3 ou mais vogais, você será o ganhador!");
 
 let nome = inputd.question("Escreve seu nome: ");
