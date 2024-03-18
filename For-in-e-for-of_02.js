@@ -21,16 +21,22 @@ while (n < 5) {
     n++;
 };
 
+let check = 0;
 for (let element of array_sorteados) {
     if (array.includes(element)) {
-        console.log("Parabens você acetou o número sorteado: " + element )
+        console.log("Parabens você acertou o número sorteado: " + element);
+        check++;
     }
+};
+
+if (check === 0) {
+    console.log("Você perdeu!! Errou todos os números sorteados! ");
 };
 
 
 for (let cont = 0; cont < array_sorteados.length; cont++) {
     if (cont === 0) {
-        process.stdout.write("Os números sorteados foram: ")
+        process.stdout.write("Os números sorteados foram: ");
     };
-    process.stdout.write(`${array_sorteados[cont]} `)
+    process.stdout.write(`${array_sorteados[cont]} `);
 };
